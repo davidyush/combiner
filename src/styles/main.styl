@@ -1,0 +1,63 @@
+body,main,div,h1,h2,h3,h4,h5,h6
+  margin 0
+  padding 0
+
+white = #ffffff
+grey = #ecf0f1
+dark_grey = #333333
+dark_purpule = #420544
+
+body
+  font-family 'PT Sans'
+  background-color white
+
+.container
+  width 1100px
+  margin 0 auto
+
+.header
+  padding 10px
+  background-color dark_purpule
+  color white
+.logo
+  font-size 30px
+
+.main-container
+  display flex
+  padding-top 30px
+
+.titles
+  color dark_grey
+  font-weight lighter
+  margin-bottom 40px
+  h2
+    font-size 24px
+  h3
+    font-size 18px
+
+
+
+.rules
+  width 340px
+  margin-right 50px
+  background-color grey
+  border 1px solid #cccccc
+  padding 30px
+
+.options
+  display flex
+  justify-content flex-start
+  flex-wrap wrap
+  width 700px
+
+.option
+  border 1px solid #cccccc
+  width 270px
+  padding 10px
+  margin-right 20px
+  margin-bottom 20px
+  color dark_grey
+  background-color grey
+  &:hover
+    cursor pointer
+    border-color darken(#ccc, 20%)
