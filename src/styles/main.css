@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -33,7 +34,7 @@ body {
 .titles {
   color: #333;
   font-weight: lighter;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .titles h2 {
   font-size: 24px;
@@ -41,12 +42,16 @@ body {
 .titles h3 {
   font-size: 18px;
 }
-.rules {
+.rules-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+.rules-box {
   width: 340px;
   margin-right: 50px;
   background-color: #ecf0f1;
   border: 1px solid #ccc;
-  padding: 30px;
+  padding: 20px;
 }
 .options {
   display: flex;
@@ -66,4 +71,7 @@ body {
 .option:hover {
   cursor: pointer;
   border-color: #a3a3a3;
+}
+.complete-title {
+  color: #333;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import Option from './Option'
 import questions from '../quiz/questions'
 
@@ -20,19 +21,25 @@ class Options extends Component {
   }
 
   render() {
-    const { rule } = questions[this.state.num];
-    console.log(questions.length);
+    let rule;
+    if(questions[this.state.num] !== undefined) {
+      rule = questions[this.state.num].rule;
+    }
+
     return (
       <div className='options'>
-        {questions[this.state.num].options.map((e,index) => (
-          <Option
-            handlerClick={this.handlerClick}
-            value={e.value}
-            key={Date.now() + index}
-            rule={rule}
-            title={e.title}
-            code={e.code}/>
-        ))}
+        { questions.length === this.state.num ?
+          <h2 className='complete-title'>Complete :)</h2> :
+          <div>{ questions[this.state.num].options.map((e,index) => (
+            <Option
+              handlerClick={this.handlerClick}
+              value={e.value}
+              key={Date.now() + index}
+              rule={rule}
+              title={e.title}
+              code={e.code}/>
+          ))}</div>
+        }
       </div>
     )
   }

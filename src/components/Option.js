@@ -2,7 +2,12 @@ import React, { Component } from 'react'
 
 class Option extends Component {
   clickHandler = () => {
-    this.props.handlerClick(`"${this.props.rule}": ${this.props.value}`);
+    let value = this.props.value;
+    if(typeof value === 'string') {
+      value = `"${this.props.value}"`
+    }
+
+    this.props.handlerClick(`"${this.props.rule}": ${value}`);
   }
   render() {
     return (

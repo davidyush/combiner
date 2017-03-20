@@ -5,8 +5,10 @@ class Rules extends Component {
   render() {
     return (
       <div className='rules'>
-      <h2>rules</h2>
-        {this.props.rules.map((e, i) => <h4 key={i}>{e}</h4>)}
+      <h2 className='rules-title'>Your Rules</h2>
+        <div className='rules-box'>
+          {this.props.rules.map((rule, index) => <p key={index}> {rule}</p>)}
+        </div>
       </div>
     )
   }
