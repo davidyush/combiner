@@ -27,10 +27,10 @@ class Options extends Component {
     }
 
     return (
-      <div className='options'>
+      <div>
         { questions.length === this.state.num ?
           <h2 className='complete-title'>Complete :)</h2> :
-          <div>{ questions[this.state.num].options.map((e,index) => (
+          <div className='options'>{ questions[this.state.num].options.map((e,index) => (
             <Option
               handlerClick={this.handlerClick}
               value={e.value}

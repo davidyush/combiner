@@ -1,3 +1,7 @@
 import colors from './colors'
+import blocks from './blocks'
 
-export default [ ...colors ];
+export default [
+  ...colors,
+  ...blocks
+];

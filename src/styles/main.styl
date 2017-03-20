@@ -50,13 +50,14 @@ body
 
 .options
   display flex
-  justify-content flex-start
+  // justify-content flex-start
   flex-wrap wrap
-  width 700px
+  flex-direction flex-row
+  width 750px
 
 .option
   border 1px solid #cccccc
-  width 270px
+  width 320px
   padding 10px
   margin-right 20px
   margin-bottom 20px
@@ -65,6 +66,11 @@ body
   &:hover
     cursor pointer
     border-color darken(#ccc, 20%)
+
+.option-title
+  font-weight 600
+.option-code
+  white-space pre-wrap
 
 .complete-title
   color dark_grey

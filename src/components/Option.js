@@ -13,9 +13,9 @@ class Option extends Component {
     return (
       <div className='option' onClick={this.clickHandler}>
         <h4 className='option-title'>{this.props.title}</h4>
-        <pre>
+        <code className='option-code'>
           {this.props.code}
-        </pre>
+        </code>
       </div>
     )
   }
