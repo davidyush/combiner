@@ -3,12 +3,16 @@ import { connect } from 'react-redux'
 
 class Rules extends Component {
   render() {
+    let startFile = `"use strict";\n\nmodule.exports = {\n  "rules": {\n`;
+    let endFile = `  },\n}`;
     return (
       <div className='rules'>
       <h2 className='rules-title'>Your Rules</h2>
-        <div className='rules-box'>
-          {this.props.rules.map((rule, index) => <p key={index}> {rule}</p>)}
-        </div>
+        <pre className='rules-box'>
+          {startFile}
+          {this.props.rules.map((rule, index) => `    ${rule},\n` )}
+          {endFile}
+        </pre>
       </div>
     )
   }
