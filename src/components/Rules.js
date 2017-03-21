@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
+
+import styleconfig from 'stylelint-config-standard'
+console.log(styleconfig);
+
 class Rules extends Component {
   render() {
-    let startFile = `"use strict";\n\nmodule.exports = {\n  "rules": {\n`;
+    let startFile = `{\n  "extends": "stylelint-config-standard",\n  "rules": {\n`;
     let endFile = `  },\n}`;
     return (
       <div className='rules'>
-      <h2 className='rules-title'>Your Rules</h2>
+      <h2 className='rules-title'>Your stylelint.config.js</h2>
         <pre className='rules-box'>
           {startFile}
           {this.props.rules.map((rule, index) => `    ${rule},\n` )}

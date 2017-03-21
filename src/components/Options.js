@@ -29,7 +29,7 @@ class Options extends Component {
     return (
       <div>
         { questions.length === this.state.num ?
-          <h2 className='complete-title'>Complete :)</h2> :
+          <h2 className='complete-title'>Complete ~(^.^)~</h2> :
           <div className='options'>{ questions[this.state.num].options.map((e,index) => (
             <Option
               handlerClick={this.handlerClick}
