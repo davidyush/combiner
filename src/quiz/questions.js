@@ -1,7 +1,7 @@
-import colors from './colors'
-import blocks from './blocks'
+import colors from './colors/'
+import numbers from './numbers/'
 
 export default [
   ...colors,
-  ...blocks
+  ...numbers
 ];

@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 
 class Rules extends Component {
   render() {
-    let startFile = `{\n  "extends": "stylelint-config-standard",\n  "rules": {\n`;
-    let endFile = `  },\n}`;
+    const startFile = `{\n  "extends": "stylelint-config-standard",\n  "rules": {\n`;
+    const endFile = `  },\n}`;
     return (
       <div className='rules'>
       <h2 className='rules-title'>Your config</h2>
