@@ -7,7 +7,7 @@ More information about [Stylelint](https://stylelint.io)
 
 For now I've made several questions about colors and blocks and looking for better architecture to make quiz.
 
-![Looks like this](public/screen3.png)
+![Looks like this](public/screen4.png)
 
 ---
 

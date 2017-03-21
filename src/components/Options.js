@@ -13,6 +13,8 @@ class Options extends Component {
     this.state = { num: 0 };
   }
 
+  handlerSkip = () => { this.setState({num: this.state.num + 1 }); }
+
   handlerClick = (rule) => {
     if(rule) {
       this.props.addRule(rule);
@@ -40,7 +42,13 @@ class Options extends Component {
               rule={rule}
               title={e.title}
               code={e.code}/>
-          ))}</div>
+            ))}
+            <div className='option'>
+              <h3 className='option-title' onClick={this.handlerSkip}>
+                Skip the rule
+              </h3>
+            </div>
+          </div>
         }
       </div>
     )
