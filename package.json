@@ -5,7 +5,9 @@
   "devDependencies": {
     "react-scripts": "0.9.5",
     "redux-devtools-extension": "^2.13.0",
-    "redux-logger": "^2.8.2"
+    "redux-logger": "^2.8.2",
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
   },
   "dependencies": {
     "react": "^15.4.2",
@@ -15,6 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "stylelint": "stylelint ./src/styles/*.css; exit 0"
   }
 }

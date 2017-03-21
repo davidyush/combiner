@@ -14,7 +14,9 @@ class Options extends Component {
   }
 
   handlerClick = (rule) => {
-    this.props.addRule(rule);
+    if(rule) {
+      this.props.addRule(rule);
+    }
     this.setState({
       num: ++this.state.num
     });
