@@ -25,8 +25,7 @@ span { color: pink; }`;
 const var5 = `
 a { color: pink; }
 span{
-color: pink;}
-`
+color: pink;}`;
 
 export default {
   rule: "block-opening-brace-newline-before",
