@@ -11,7 +11,7 @@ For now I've made several questions about colors and blocks and looking for bett
 
 ---
 
-I have used ```create-react-app```
+I used ```create-react-app```
 
 To run the example
 ```
