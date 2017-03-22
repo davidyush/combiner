@@ -21,7 +21,7 @@ class Option extends Component {
     let isPassed = this.checkRule(this.props.rule, this.props.value);
 
     if(typeof value === 'string') {
-      value = `"${this.props.value}"`
+      value = `"${this.props.value}"`;
     }
 
     if(isPassed) {

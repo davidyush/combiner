@@ -24,10 +24,10 @@ npm start
 
 i dont know exactly what kind of rules should be.
 
-List of rules fro now:
+List of rules for now:
 
 #### colors
-- color-hex-case: "always" |"never"
+- color-hex-case
 - color-hex-length
 - color-named
 - color-no-hex

@@ -52,7 +52,7 @@ export default {
       code: var5
     }, {
       title: "There must never be whitespace before the opening brace in multi-line blocks",
-      value: "never-multi-line"
+      value: "never-multi-line",
       code: var6
     }
   ]
