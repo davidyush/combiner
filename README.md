@@ -20,32 +20,32 @@ npm install
 npm start
 ```
 ---
-###Opinion
+##Opinion
 
 i dont know exactly what kind of rules should be.
 
 List of rules:
 
-####colors
+###colors
 - color-hex-case: "always" |"never"
 - color-hex-length
 - color-named
 - color-no-hex
 - color-no-invalid-hex
 
-####strings
+###strings
 - string-no-newline
 - string-quotes
 
-####numbers
+###numbers
 - number-leading-zero
 - number-no-trailing-zeros
 
-####at-rules
+###at-rules
 - at-rule-name-case
 - at-rule-name-space-after
 
-####blocks
+###blocks
 - block-closing-brace-empty-line-before
 - block-closingbrace-newline-before
 - block-closing-brace-space-before
