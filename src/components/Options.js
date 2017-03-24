@@ -6,8 +6,6 @@ import questions from '../quiz/questions'
 import { connect } from 'react-redux'
 import { addRule } from '../actions'
 
-console.log(questions);
-
 class Options extends Component {
   constructor() {
     super();

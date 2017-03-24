@@ -5,9 +5,6 @@ This is a tool to generate stylelint file just like
 
 More information about [Stylelint](https://stylelint.io)
 
-For now I've made several questions about colors and blocks and looking
-for better architecture to make quiz.
-
 ![Looks like this](public/screen4.png)
 
 ---
@@ -21,8 +18,6 @@ npm start
 ```
 ---
 ### Opinion
-
-i dont know exactly what kind of rules should be.
 
 List of rules for now:
 
@@ -54,3 +49,34 @@ List of rules for now:
 - block-opening-brace-newline-before
 - block-opening-brace-space-after
 - block-opening-brace-space-after
+
+---
+todo
+
+to pass only rules are included in stylelint-config-standard
+which i find most controversial.
+
+future list:
+- at-rule-name-case
+- color-hex-case
+- color-hex-length
+- block-closing-brace-empty-line-before
+- block-closing-brace-space-before
+- block-no-empty
+- block-opening-brace-space-after
+- block-opening-brace-space-before
+- comment-whitespace-inside
+- declaration-block-semicolon-newline-after
+- declaration-block-semicolon-space-before
+- declaration-colon-space-after
+- declaration-colon-space-before
+- media-feature-colon-space-after
+- media-feature-colon-space-before
+- media-feature-name-case
+- selector-attribute-brackets-space-inside
+- selector-attribute-operator-space-after
+- selector-combinator-space-after
+- selector-combinator-space-after
+- selector-list-comma-space-before
+- selector-pseudo-class-parentheses-space-inside
+- selector-pseudo-element-colon-notation
